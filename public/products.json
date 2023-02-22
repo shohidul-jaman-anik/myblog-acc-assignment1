@@ -1,0 +1,259 @@
+[
+  {
+    "id": 1,
+    "title": "What is async await in javaScript?",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2021-10-15",
+    "image": "https://i.ibb.co/tHKy1q3/asyn.png",
+    "categories": "pogramming",
+    "tags": "javaScript",
+    "content": [
+      {
+        "type": "",
+        "text": "We all know that JavaScript is Synchronous in nature which means that it has an event loop that allows you to queue up an action that won’t take place until the loop is available sometime after the code that queued the action has finished executing."
+      },
+      {
+        "type": "",
+        "text": "But there are a lot of functionalities in our program which make our code Asynchronous and one of them is the Async/Await functionality. Async/Await is the extension of promises which we get as support in the language. "
+      },
+      {
+        "type": "The following sections will describe more about async and await in detail:",
+        "text": "Async: It simply allows us to write promises-based code as if it was synchronous and it checks that we are not breaking the execution thread. It operates asynchronously via the event loop. Async functions will always return a value. It makes sure that a promise is returned and if it is not returned then JavaScript automatically wraps it in a promise which is resolved with its value."
+      },
+      {
+        "type": "",
+        "text": "Await: Await function is used to wait for the promise. It could be used within the async block only. It makes the code wait until the promise returns a result. It only makes the async block wait."
+      },
+      {
+        "type": "",
+        "text": "Using async/await makes the code more readable and easier to understand, as the flow of execution is linear and the code looks similar to synchronous code. It also allows for better error handling, as we can catch errors using standard try/catch blocks."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Why should i learn javascript?",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2021-02-25",
+    "image": "https://i.ibb.co/TB0xFpX/why-js.jpg",
+    "categories": "pogramming",
+    "tags": "javaScript",
+    "content": [
+      {
+        "type": "",
+        "text": "There are many good reasons to learn JavaScript, including:"
+      },
+      {
+        "type": "1/ Front-end web development:",
+        "text": "JavaScript is the primary language used to create dynamic and interactive websites. Learning JavaScript is essential if you want to become a front-end web developer."
+      },
+      {
+        "type": "2/ Back-end web development:",
+        "text": "JavaScript can also be used on the back-end, thanks to platforms like Node.js. By learning JavaScript, you can create full-stack web applications that run on both the front-end and back-end."
+      },
+      {
+        "type": "3/ Job opportunities:",
+        "text": "JavaScript is one of the most in-demand programming languages in the job market. Learning JavaScript can open up many job opportunities for you, whether you want to become a web developer or pursue a career in other fields like game development, mobile app development, and more."
+      },
+      {
+        "type": "4/ Popularity:",
+        "text": "JavaScript is the most popular programming language in the world. By learning JavaScript, you will have access to a vast community of developers who share their knowledge, tools, and resources to help you improve your skills and build better applications."
+      },
+      {
+        "type": "5/ Versatility:",
+        "text": "JavaScript is a versatile language that can be used for a wide range of applications, from building simple scripts to creating complex applications. It can also be used with many other technologies and frameworks, including React, Angular, and Vue.js."
+      },
+      {
+        "type": "6/ Browser support:",
+        "text": " JavaScript is supported by all major web browsers, which means that your code will work on a wide range of devices and platforms."
+      },
+      {
+        "type": "7/ Interactivity:",
+        "text": "JavaScript allows you to create dynamic and interactive user interfaces that respond to user input and other events in real-time. This can help you create engaging user experiences that keep users coming back."
+      },
+      {
+        "type": "8/ Flexibility:",
+        "text": "JavaScript can be used for many different applications, including web development, game development, mobile app development, and more. This means that you can apply your skills in many different ways and explore different areas of interest."
+      },
+      {
+        "type": "",
+        "text": "Overall, learning JavaScript is a valuable skill that can help you build a successful career in tech and open up many opportunities for personal and professional growth."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "What is Context Api",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2022-01-5",
+    "image": "https://i.ibb.co/5YFFzFw/context-api.png",
+    "categories": "pogramming",
+    "tags": "react",
+    "content": [
+      {
+        "type": "",
+        "text": "Context API is a feature in React that allows you to share data between components without having to pass the data through each component manually. Context provides a way to pass data through the component tree without having to pass props down manually at every level."
+      },
+      {
+        "type": "",
+        "text": "In simpler terms, Context API allows you to create global data that can be accessed by any component in your application. This can be useful in scenarios where you have data that is used by many components, such as the currently logged-in user or the theme of your application."
+      },
+      {
+        "type": "",
+        "text": "To use Context API in your React application, you will first need to create a context using the createContext function. You can then use the Provider component to provide the data that you want to make available to the components in the context. Finally, you can use the Consumer component or the useContext hook to access the data in your components."
+      },
+      {
+        "type": "",
+        "text": "In the example above, the ThemeContext context is created using the createContext function. The App component then provides the dark theme to the application using the ThemeContext.Provider component. Finally, the Header and MainContent components access the theme using the ThemeContext.Consumer component and the useContext hook, respectively."
+      },
+      {
+        "type": "",
+        "text": "Context API can be a powerful tool for sharing data between components in your React application. However, it's important to use it judiciously and not to rely on it too heavily, as it can make your code more complex and harder to maintain."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "What is event loop  in js ?",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2021-07-5",
+    "image": "https://i.ibb.co/MZMDVYk/1-1.png",
+    "categories": "pogramming",
+    "tags": "javaScript",
+    "content": [
+      {
+        "type": "Introdction",
+        "text": "The event loop is a fundamental part of JavaScript's concurrency model that allows for non-blocking, asynchronous operations. It's responsible for managing the execution of code in the JavaScript runtime by continuously monitoring the call stack, the message queue, and the event loop."
+      },
+      {
+        "type": "",
+        "text": "The call stack is where JavaScript code is executed. Every time a function is called, it's added to the top of the call stack, and when it's completed, it's removed from the stack. The message queue is where events and other messages are stored, waiting to be processed."
+      },
+      {
+        "type": "",
+        "text": "The event loop's job is to constantly check the call stack and the message queue to determine which function should be executed next. If the call stack is empty, the event loop will pick the first message from the message queue and add it to the call stack, which will be executed. This process continues until there are no more messages in the queue."
+      },
+      {
+        "type": "",
+        "text": "This is a simplified explanation of how the event loop works in JavaScript. It's an important concept to understand when working with asynchronous JavaScript code, as it allows you to write code that doesn't block the main thread and can handle I/O operations efficiently."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Explain Node.js Architechture",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2022-02-15",
+    "image": "https://i.ibb.co/Yth5x3V/Nodejs-Architecture.png",
+    "categories": "pogramming",
+    "tags": "node.js",
+    "content": [
+      {
+        "type": "",
+        "text": "Node.js architecture is designed to be lightweight, efficient, and scalable. It's built on top of the V8 JavaScript engine, which is a high-performance engine that compiles and executes JavaScript code at lightning speeds. Here are some key components of the Node.js architecture:"
+      },
+      {
+        "type": "1/ Event loop:",
+        "text": " Node.js uses an event-driven, non-blocking I/O model that allows it to handle many concurrent connections with minimal resources. This is achieved through the use of an event loop, which constantly monitors the queue of events and dispatches them to the appropriate handlers. When an I/O operation is initiated, it's added to the event loop's queue, and the event loop continues to run other operations while the I/O operation is being performed."
+      },
+      {
+        "type": "2/ Single-threaded:",
+        "text": " Node.js is single-threaded, which means that it uses a single thread to handle all incoming requests. However, this thread is designed to handle many concurrent connections through the use of an event-driven model."
+      },
+      {
+        "type": "3/ Modules:",
+        "text": " Node.js provides a module system that allows developers to create reusable modules of code that can be easily imported into other applications. The Node.js ecosystem is built around this module system, and there are thousands of modules available on the npm (Node Package Manager) registry."
+      },
+      {
+        "type": "4/ Asynchronous programming:",
+        "text": " Node.js encourages the use of asynchronous programming techniques, such as callbacks and promises, to handle I/O operations efficiently. This allows Node.js to avoid blocking the main thread and to handle many concurrent connections without using too many resources."
+      },
+      {
+        "type": "5/ Non-blocking I/O: ",
+        "text": "Node.js uses non-blocking I/O to handle I/O operations efficiently. When an I/O operation is initiated, Node.js registers a callback function that will be called when the operation completes. In the meantime, the event loop continues to run other operations, allowing Node.js to handle many concurrent connections with minimal resources."
+      },
+      {
+        "type": "6/ C++ bindings:",
+        "text": " Node.js provides C++ bindings that allow developers to write performance-critical code in C++ and integrate it with their Node.js applications. This allows developers to write highly optimized code that can take advantage of the performance benefits of lower-level languages."
+      },
+      {
+        "type": "",
+        "text": "Overall, the Node.js architecture is designed to be highly efficient, scalable, and lightweight. It's optimized for handling many concurrent connections and can handle I/O operations efficiently through the use of non-blocking I/O and asynchronous programming techniques."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "( Node.js Vs Php ) who is win?",
+    "author": {
+      "name": "Shohidul Jamna Anik",
+      "email": "anikh499@gmail.com"
+    },
+    "date": "2021-11-17",
+    "image": "https://i.ibb.co/MZMDVYk/1-1.png",
+    "categories": "pogramming",
+    "tags": "node.js",
+    "content": [
+      {
+        "type": "1/ Performance:",
+        "text": "Node.js is built on top of the V8 engine, which is a high-performance JavaScript engine developed by Google. This allows Node.js to handle large amounts of data and requests quickly and efficiently. PHP, on the other hand, is a scripting language that can be slower when handling large volumes of requests."
+      },
+      {
+        "type": "2/ Asynchronous programming:",
+        "text": " Node.js is designed to use asynchronous programming techniques, such as callbacks and promises, to handle I/O operations efficiently. This allows Node.js to handle many concurrent connections without using too many resources. PHP is not designed for asynchronous programming and can block the main thread when handling I/O operations, which can affect performance."
+      },
+      {
+        "type": "3/ Scalability:",
+        "text": "Node.js is designed to be scalable, and its non-blocking I/O model allows it to handle many concurrent connections with minimal overhead. PHP can also be made to scale by using techniques such as load balancing and caching, but it requires more effort to set up and manage."
+      },
+      {
+        "type": "4/ Ecosystem:",
+        "text": "Node.js has a large and active community that has created a vast ecosystem of modules and tools that can be used to build complex applications quickly and efficiently. PHP also has a large community, but its ecosystem is not as extensive as Node.js."
+      },
+      {
+        "type": "5/ Language:",
+        "text": "Node.js uses JavaScript as its programming language, which is a popular and widely used language that many developers are familiar with. PHP has its own language, which can be more difficult for developers to learn if they are not already familiar with it."
+      },
+      {
+        "type": "6/ Platform independence:",
+        "text": " Node.js is a platform-independent technology that can be run on any operating system. PHP is also platform-independent, but it was originally designed for the Linux operating system and may require more effort to set up on other platforms."
+      },
+      {
+        "type": "7/ Code reusability:",
+        "text": " Node.js has a module system that allows developers to write reusable code modules that can be easily imported into other projects. This promotes code reusability and can save time and effort when building complex applications. PHP also has a module system, but it's not as extensive as Node.js and may require more effort to use."
+      },
+      {
+        "type": "8/ Real-time applications:",
+        "text": " Node.js is well-suited for building real-time applications that require high-performance, such as chat applications or online games. Its non-blocking I/O model and asynchronous programming techniques allow it to handle many concurrent connections and respond quickly to requests. PHP can also be used for real-time applications, but it requires more effort to set up and manage."
+      },
+      {
+        "type": "9/ Community support:",
+        "text": "Node.js has a large and active community that is constantly developing new modules and tools to enhance the platform. PHP also has a large community, but it's not as active as the Node.js community."
+      },
+      {
+        "type": "10/ Security:",
+        "text": "Both Node.js and PHP have security risks that need to be managed by developers. However, Node.js is considered more secure because it uses a single thread to handle requests, which can make it easier to isolate and manage security risks. PHP's multi-threaded model can make it more difficult to manage security risks."
+      },
+
+      {
+        "type": "",
+        "text": "In conclusion, both Node.js and PHP are powerful server-side technologies that can be used to build dynamic web applications. Node.js is faster, more scalable, and has a larger ecosystem, while PHP is more widely used and has a simpler setup. The choice between the two depends on the specific requirements of the project and the preferences of the development team."
+      }
+    ]
+  }
+]
