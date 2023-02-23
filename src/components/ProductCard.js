@@ -26,9 +26,7 @@ const ProductCard = ({ product }) => {
       </div>
       <p className='font-bold text-center text-2xl mt-3'> {product.title} </p>
       <span>{product.content[0].text.slice(0,100)}</span>
-      {/* <p className='text-center mb-3'>Categories: {product.categories}</p>
-      <small className=' mb-1'>Author name: {product.author.name}</small>
-      <small className=' mb-1'>email: {product.author.email}</small> */}
+      
       <div>
         <p onClick={() => dispatch(readHistory(product))}
         >Read more...</p>

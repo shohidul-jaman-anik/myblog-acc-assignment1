@@ -1,4 +1,4 @@
-import { ADD_DATA, LOAD_DATA, READING_HISTORY, REMOVE_DATA, SEARCH_DATA, SORTED_DATA, UPDATE_DATA } from "../actionTypes/actionTypes"
+import { ADD_DATA, LOAD_DATA, REMOVE_DATA, SORTED_DATA, UPDATE_DATA } from "../actionTypes/actionTypes"
 
 export const initialState = {
     readHis: [],
@@ -48,18 +48,7 @@ export const blogReducer = (state = initialState, action) => {
                 ...state,
                 blogs: sortedData
             }
-        // case SEARCH_DATA:
-        //     const searchText = action.payload
-        //     const searchBlog = state.blogs.filter(blog => blog.title.toLowerCase().includes(searchText.toLowerCase()))
-        //     return {
-        //         ...state,
-        //         blogs: searchBlog
-        //     }
-        // case READING_HISTORY:
-        //     return {
-        //         ...state,
-        //         readHis: [...state.readHis, action.payload]
-        //     }
+
         default:
             return state
     }

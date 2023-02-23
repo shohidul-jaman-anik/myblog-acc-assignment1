@@ -2,7 +2,7 @@ import { addBlogAction } from "../../actions/blogAction"
 
 const addBlogData = (blog) => {
     return async (dispatch) => {
-        const res = await fetch("http://localhost:5000/blogs", {
+        const res = await fetch("https://my-blog-acc-assignment1-server.vercel.app/blogs", {
             method: "POST",
             headers: {
                 "Content-type": "application/json"

@@ -37,9 +37,3 @@ export const sortBlogAction = (data) => {
       payload: data
    }
 }
-// export const searchBlogAction = (inputText) => {
-//    return {
-//       type: SEARCH_DATA,
-//       payload: inputText
-//    }
-// }

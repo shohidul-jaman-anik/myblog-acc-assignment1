@@ -7,16 +7,16 @@ import deleteBlogData from "../../redux/thunk/blog/deleteBlogData";
 const ProductList = () => {
   const [products, setProducts] = useState([]);
   const dispatch = useDispatch()
-  const navigate=useNavigate()
+  const navigate = useNavigate()
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://my-blog-acc-assignment1-server.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => setProducts(data.data));
   });
 
   const handleUpdate = (id) => {
-     navigate(`/dashboard/updateBlog/${id}`)
+    navigate(`/dashboard/updateBlog/${id}`)
   }
 
   return (

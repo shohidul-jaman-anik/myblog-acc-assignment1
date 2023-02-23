@@ -3,7 +3,7 @@ import { updateBlogAction } from "../../actions/blogAction"
 const updateBlogData = (blog, id) => {
     console.log(blog, "bloggggg")
     return async (dispatch) => {
-        const res = await fetch(`http://localhost:5000/blogs/${id}`, {
+        const res = await fetch(`https://my-blog-acc-assignment1-server.vercel.app/blogs/${id}`, {
             method: "PUT",
             headers: {
                 "Content-type": "application/json"

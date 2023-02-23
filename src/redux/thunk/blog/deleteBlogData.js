@@ -2,7 +2,7 @@ import { removeBlogAction } from "../../actions/blogAction"
 
 const deleteBlogData = (id) => {
     return async (dispatch) => {
-        const res = await fetch(`http://localhost:5000/blogs/${id}`, {
+        const res = await fetch(`https://my-blog-acc-assignment1-server.vercel.app/blogs/${id}`, {
             method: "Delete",
             headers: {
                 "Content-type": "application/json"
