@@ -10,7 +10,7 @@ const addBlogData = (blog) => {
             body: JSON.stringify(blog)
         })
         const data = res.json()
-      console.log("hello",data)
+        console.log("hello", data)
         if (data.acknowledged) {
             dispatch(addBlogAction({
                 _id: data.insertedId,

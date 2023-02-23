@@ -1,13 +1,23 @@
 import React, { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
+import { updateBlogAction } from "../../redux/actions/blogAction";
+import deleteBlogData from "../../redux/thunk/blog/deleteBlogData";
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
+  const dispatch = useDispatch()
+  const navigate=useNavigate()
 
   useEffect(() => {
     fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => setProducts(data.data));
   });
+
+  const handleUpdate = (id) => {
+     navigate(`/dashboard/updateBlog/${id}`)
+  }
 
   return (
     <div class='flex flex-col justify-center items-center h-full w-full '>
@@ -31,13 +41,16 @@ const ProductList = () => {
                   <div class='font-semibold text-left'>Date</div>
                 </th>
                 <th class='p-2'>
-                  <div class='font-semibold text-center'>Action</div>
+                  <div class='font-semibold text-start'>Update</div>
+                </th>
+                <th class='p-2'>
+                  <div class='font-semibold text-center'>Delete</div>
                 </th>
               </tr>
             </thead>
 
             <tbody class='text-sm divide-y divide-gray-100'>
-              {products.map(({ title, tags, date}) => (
+              {products.map(({ _id, title, tags, date }) => (
                 <tr>
                   <td class='p-2'>
                     <input type='checkbox' class='w-5 h-5' value='id-1' />
@@ -48,15 +61,21 @@ const ProductList = () => {
                   <td class='p-2'>
                     <div class='text-left capitalize'>{tags}</div>
                   </td>
-                 
+
                   <td class='p-2'>
                     <div class='text-left font-medium text-indigo-500'>
                       {date}
                     </div>
                   </td>
+                  <td className="pl-3" onClick={() => {
+                    dispatch(updateBlogAction())
+                    handleUpdate(_id)
+                  }}>
+                    ✍️
+                  </td>
                   <td class='p-2'>
                     <div class='flex justify-center'>
-                      <button>
+                      <button onClick={() => dispatch(deleteBlogData(_id))}>
                         <svg
                           class='w-8 h-8 hover:text-blue-600 rounded-full hover:bg-gray-100 p-1'
                           fill='none'

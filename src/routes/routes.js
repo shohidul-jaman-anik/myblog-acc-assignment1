@@ -3,6 +3,7 @@ import Dashboard from "../layout/Dashboard/Dashboard";
 import Main from "../layout/Main/Main";
 import AddProduct from "../pages/Dashboard/AddProduct";
 import ProductList from "../pages/Dashboard/ProductList";
+import UpdateProduct from "../pages/Dashboard/UpdateProduct";
 import About from "../pages/Main/About";
 import BlogDetails from "../pages/Main/BlogDetails";
 import Home from "../pages/Main/Home";
@@ -42,6 +43,10 @@ const routes = createBrowserRouter([
       {
         path: "add-product",
         element: <AddProduct />,
+      },
+      {
+        path: "updateBlog/:id",
+        element: <UpdateProduct />,
       },
     ],
   },
